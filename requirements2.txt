@@ -1,0 +1,5 @@
+streamlit
+google-genai
+deepgram-sdk
+python-dotenv
+streamlit-webrtc

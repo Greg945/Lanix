@@ -1,0 +1,11 @@
+streamlit
+streamlit-webrtc
+av
+google-genai
+numpy
+scipy
+matplotlib
+pydub
+aiortc
+opencv-python-headless
+

@@ -1,0 +1,22 @@
+[
+  {
+    "user": "hallo",
+    "assistant": "Hallo! Wie kann ich Ihnen heute behilflich sein?"
+  },
+  {
+    "user": "was ist das",
+    "assistant": "Das ist ein Apfel."
+  },
+  {
+    "user": "jo",
+    "assistant": "Okay! Kann ich Ihnen sonst noch irgendwie behilflich sein?"
+  },
+  {
+    "user": "dann",
+    "assistant": "Okay, dann was? Brauchen Sie noch etwas oder haben Sie eine andere Frage?"
+  },
+  {
+    "user": "wo wird diese frucht angebaut (Dateien: Banane.jpeg)",
+    "assistant": "Diese Frucht ist eine Banane und sie wird hauptsächlich in tropischen Regionen angebaut, wie zum Beispiel in Südamerika, Asien und Afrika."
+  }
+]

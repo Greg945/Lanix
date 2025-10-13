@@ -1,0 +1,18 @@
+[
+  {
+    "user": null,
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": "wie hoch",
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": "wie hoch ist der eiffelturm",
+    "assistant": "Die Höhe des Eiffelturms beträgt 330 Meter."
+  },
+  {
+    "user": "hallo",
+    "assistant": "Ignoriert"
+  }
+]

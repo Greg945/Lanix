@@ -1,0 +1,162 @@
+<body>
+    <h1>Live Transkription mit Deepgram</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <input id="myinput" value="" hidden />
+    <p id="output"></p>
+
+    <script>
+        function sendMessageToStreamlitClient(type, data) {
+          var outData = Object.assign({
+            isStreamlitMessage: true,
+            type: type,
+          }, data);
+          window.parent.postMessage(outData, "*");
+        }
+
+        function init() {
+          sendMessageToStreamlitClient("streamlit:componentReady", {apiVersion: 1});
+        }
+
+        function setFrameHeight(height) {
+          sendMessageToStreamlitClient("streamlit:setFrameHeight", {height: height});
+        }
+
+        // The `data` argument can be any JSON-serializable value.
+        function sendDataToPython(data) {
+          sendMessageToStreamlitClient("streamlit:setComponentValue", data);
+        }
+
+        function reset_flag() {
+          is_waiting = false
+          if (queue.length > 0) {
+              final_text = queue.join(" ");
+              queue = []
+              sendDataToPython({
+                value: final_text,
+                dataType: "json",
+              });
+          }
+        }
+
+        let is_waiting = false
+        let queue = []
+        let one_speech = []
+        let languagevalue = "de-DE"
+
+        console.log("start")
+
+        const API_KEY = "861ef76d80da6f7535d9f3361dd139e2dd26a24d"; // Hier deinen API-Key einfügen
+        const DEEPGRAM_URL = `wss://api.deepgram.com/v1/listen`;
+        let ws, mediaRecorder;
+
+        document.getElementById("start").addEventListener("click", async () => {
+            if (!navigator.mediaDevices.getUserMedia) {
+                alert("Dein Browser unterstützt kein getUserMedia.");
+                return;
+            }
+
+            navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+              console.log({ stream })
+              // Further code goes here
+            
+
+            const mediaRecorder = new MediaRecorder(stream)
+            ws = new WebSocket(`wss://api.deepgram.com/v1/listen?language=${languagevalue}&model=nova-2&endpointing=1000`, [ 'token', API_KEY ]);
+            
+            
+
+            ws.onopen = () => {
+              console.log("WebSocket verbunden");
+              const keepAliveMsg = JSON.stringify({ type: "KeepAlive" });
+              ws.send(keepAliveMsg);
+              mediaRecorder.addEventListener('dataavailable', event => {
+              if (event.data.size > 0 && ws.readyState == 1) {
+                //console.log({ event: 'dataavailable', data: event.data })
+                ws.send(event.data)
+              }
+            })
+            mediaRecorder.start(250) // Sendet Audio alle 250ms
+            };
+            
+            ws.onmessage = (event) => {
+              const response = JSON.parse(event.data);
+              if (response.channel && response.channel.alternatives[0].transcript) {
+                document.getElementById("output").innerText = response.channel.alternatives[0].transcript;
+                console.log(response)
+                console.log(response.channel.alternatives[0].transcript)
+                console.log("is_final: " , response.is_final)
+                console.log("speech_final: " , response.speech_final)
+
+                if (response.speech_final == true) {
+                  one_speech += (response.channel.alternatives[0].transcript)
+                  console.log(one_speech)
+                  queue.push(one_speech)
+                  one_speech = []
+                  if (is_waiting == false) {
+                    is_waiting = true
+                    sendDataToPython({
+                      value: response.channel.alternatives[0].transcript,
+                      dataType: "json",
+                    });
+                    queue = []
+                    setTimeout(reset_flag, 5000)
+                  }
+                else {
+                  one_speech += response.channel.alternatives[0].transcript
+                }
+                }
+              }
+            };
+            ws.onclose = () => {
+              console.log({ event: 'onclose' })
+            }
+
+            ws.onerror = (error) => {
+              console.log({ event: 'onerror', error })
+            }
+
+            
+
+        document.getElementById("stop").addEventListener("click", () => {
+            if (mediaRecorder) {
+                mediaRecorder.stop();
+                console.log("MediaRecorder gestoppt");
+            }
+            if (ws) {
+                ws.close();
+                console.log("WebSocket geschlossen");
+            }
+        }) }) });
+
+        var myInput = document.getElementById("myinput");
+
+        function onDataFromPython(event) {
+        if (event.data.type !== "streamlit:render") return;
+        languagevalue = event.data.args.language;
+        }
+
+        myInput.addEventListener("change", function() {
+        sendDataToPython({
+          value: "myInput.value",
+          dataType: "json",
+        });
+        })
+
+        // Hook things up!
+        window.addEventListener("message", onDataFromPython);
+        init();
+
+        // Hack to autoset the iframe height.
+        window.addEventListener("load", function() {
+          window.setTimeout(function() {
+            setFrameHeight(document.documentElement.clientHeight)
+          }, 0);
+        });
+
+        // Optionally, if the automatic height computation fails you, give this component a height manually
+        // by commenting out below:
+        //setFrameHeight(200);
+    </script>
+</body>
+</html>

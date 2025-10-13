@@ -1,0 +1,30 @@
+[
+  {
+    "user": "hallo",
+    "assistant": "Hallo! Wie kann ich Ihnen heute helfen?"
+  },
+  {
+    "user": "hallo",
+    "assistant": "Hallo! Schön, wieder von dir zu hören. Was kann ich für dich tun?"
+  },
+  {
+    "user": "was ist das",
+    "assistant": "Fehler bei der API-Anfrage: 'list' object has no attribute 'read'"
+  },
+  {
+    "user": "was ist das",
+    "assistant": "Fehler bei der API-Anfrage: 'list' object has no attribute 'read'"
+  },
+  {
+    "user": "was ist das",
+    "assistant": "Das ist ein Apfel."
+  },
+  {
+    "user": "was ist das",
+    "assistant": "Das ist ein Apfel."
+  },
+  {
+    "user": "was fuer eine sorte ist das",
+    "assistant": "Aufgrund der Farbe und Form würde ich sagen, dass es sich um einen Gala-Apfel handeln könnte."
+  }
+]

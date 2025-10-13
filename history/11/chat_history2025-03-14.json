@@ -1,0 +1,34 @@
+[
+  {
+    "user": "Wie hoch ist der Eiffelturm",
+    "assistant": "Der Eiffelturm ist etwa 330 Meter hoch."
+  },
+  {
+    "user": "Apfel",
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": "Kirsche",
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": "Was ist die Hauptstadt von Berlin?",
+    "assistant": "Berlin ist die Hauptstadt von Deutschland."
+  },
+  {
+    "user": "Hallo",
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": "Hallo",
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": "Wie hoch ist der Eiffelturm",
+    "assistant": "Der Eiffelturm ist etwa 330 Meter hoch."
+  },
+  {
+    "user": "Kirsche",
+    "assistant": "Ignoriert"
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "user": "was ist der jetzige Konversationsverlauf",
+    "assistant": "Der jetzige Konversationsverlauf ist: `[]`"
+  },
+  {
+    "user": "was ist der jetzige Konversationsverlauf",
+    "assistant": "Der jetzige Konversationsverlauf ist: `[{'user': 'was ist der jetzige Konversationsverlauf', 'assistant': 'Der jetzige Konversationsverlauf ist: `[]`'}]`"
+  },
+  {
+    "user": null,
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": "hallo",
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": null,
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": "hallo",
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  },
+  {
+    "user": " wie heißt du",
+    "assistant": "Ich bin ein großes Sprachmodell, das von Google trainiert wurde."
+  }
+]

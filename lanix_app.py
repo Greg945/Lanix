@@ -17,7 +17,7 @@ import sys
 
 st.set_page_config(
     page_title="Start - Schulportal Hessen - Pädagogische Organisation",
-    page_icon="🧊",
+    page_icon="favicon.ico",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={

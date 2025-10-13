@@ -16,7 +16,7 @@ from pathlib import Path
 import sys
 
 st.set_page_config(
-    page_title="Ex-stream-ly Cool App",
+    page_title="Start - Schulportal Hessen - Pädagogische Organisation",
     page_icon="🧊",
     layout="wide",
     initial_sidebar_state="expanded",

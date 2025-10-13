@@ -27,6 +27,8 @@ st.set_page_config(
     },
 )
 
+st.logo("Schullogo.png", link="https://login.schulportal.hessen.de/?i=5120")
+
 # valueeee = browser_detection_engine()
 # st.write(valueeee)
 
@@ -41,6 +43,7 @@ test = st.Page("seiten/test.py", title="Test")
 
 pg = st.navigation(
     ["seiten/stg.py", "seiten/settings.py", "seiten/photo.py", "seiten/test.py"],
+    position="top",
     expanded=False,
 )
 pg.run()

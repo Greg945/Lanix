@@ -2,8 +2,8 @@
 [theme]
 base="dark"
 primaryColor="#0a8f56"
-backgroundColor="#000000"
-secondaryBackgroundColor="#45164f"
+backgroundColor="#ffffff"
+secondaryBackgroundColor="#0f67e2"
 
 [server]
 enableXsrfProtection = false

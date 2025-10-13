@@ -1,0 +1,36 @@
+{
+  "stundenplan": [
+    {
+      "Start": "7:45",
+      "Ende": "9:15",
+      "Monday": "FFFFFFranzösisch",
+      "Tuesday": "Französisch",
+      "Wednesday": "Kemie",
+      "Thursday": "Deutsch",
+      "Friday": "Deutsch"
+    },
+    {
+      "Start": "09:35",
+      "Ende": "11:05",
+      "Monday": "Englisch",
+      "Tuesday": "Physik",
+      "Wednesday": "Mathe",
+      "Thursday": "Geschichte",
+      "Friday": "Sport"
+    },
+    {
+      "Start": "11:25",
+      "Ende": "12:55",
+      "Monday": "Musik",
+      "Tuesday": "Englisch",
+      "Wednesday": "PoWi",
+      "Thursday": "Religion",
+      "Friday": "Mathe"
+    }
+  ],
+  "deepgram_model": "nova-333333",
+  "system_prompt": "DDDDDDu bist ein mithörender Assistent in einem Klassenzimmer. Wenn du eine Frage hörst, beantworte sie bitte normal. Wenn es keine Frage ist, antworte nur mit \"Ignoriert\". Außerdem bekommst du immer den Konversationsverlauf, den du nur benutzt, falls du Informationen daraus zur Beantwortung der Frage braucht.",
+  "diarize": true,
+  "endpointing": "333",
+  "volume": 43
+}

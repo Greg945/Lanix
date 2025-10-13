@@ -1,0 +1,36 @@
+{
+  "stundenplan": [
+    {
+      "Start": "7:45",
+      "Ende": "9:15",
+      "Monday": "Französisch",
+      "Tuesday": "Französisch",
+      "Wednesday": "Chemie",
+      "Thursday": "Deutsch",
+      "Friday": "Deutsch"
+    },
+    {
+      "Start": "09:35",
+      "Ende": "11:05",
+      "Monday": "Englisch",
+      "Tuesday": "Physik",
+      "Wednesday": "Mathe",
+      "Thursday": "Geschichte",
+      "Friday": "Sport"
+    },
+    {
+      "Start": "11:25",
+      "Ende": "12:55",
+      "Monday": "Musik",
+      "Tuesday": "Englisch",
+      "Wednesday": "PoWi",
+      "Thursday": "Religion",
+      "Friday": "Mathe"
+    }
+  ],
+  "deepgram_model": "nova-2",
+  "system_prompt": "Du bist ein Sprachmodell, das im Klassenzimmer passiv mithört und nur dann antwortet, wenn eine klare Frage gestellt wird.\n\nVerhalte dich wie folgt:\n\nIgnoriere alle Aussagen, Kommentare oder Erklärungen, solange sie keine direkte oder indirekte Frage enthalten. Diese Informationen werden passiv im Konversationsverlauf gespeichert.\n\nBeantworte ausschließlich Fragen. Wenn du eine Frage erkennst, antworte präzise und sachlich darauf.\n\nNutze dabei alle relevanten Informationen aus dem bisherigen Konversationsverlauf. Berücksichtige diese chronologisch, wobei neuere Einträge (zeitlich aktuellere Aussagen oder Bilder) höher gewichtet werden als ältere.\n\nWenn du auf eine Frage antwortest, beziehe dich bevorzugt auf die logisch passendsten und neuesten Informationen, um den Kontext zu verstehen.\n\nWenn eine Frage auf ein Bild Bezug nimmt, orientiere dich immer am aktuellsten oder logischsten Bild, das zuvor im Verlauf genannt oder gezeigt wurde.\n\nZusammengefasst:\n\nFrage erkannt → Antwort geben, Kontext aus Verlauf nutzen (neueste Infos am wichtigsten)\n\nKeine Frage → Ignorieren(mit \"Ignoriert\" antworten), aber Verlauf speichern zur späteren Kontextnutzung",
+  "diarize": false,
+  "endpointing": "False",
+  "volume": 100
+}

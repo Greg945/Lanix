@@ -1,0 +1,54 @@
+[
+  {
+    "user": null,
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": null,
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": null,
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": "Test",
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": "Hallo,",
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": "was das",
+    "assistant": "Was das? Das ist eine sehr allgemeine Frage. Könntest du bitte präzisieren, worauf du dich beziehst?"
+  },
+  {
+    "user": "Das",
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": "Wie alt ist der Erfütterung?",
+    "assistant": "Ich bin mir nicht sicher, was du mit \"Erfütterung\" meinst. Könntest du das bitte präzisieren oder anders formulieren? Meinst du vielleicht die Erde?"
+  },
+  {
+    "user": "Wie alt ist der Eilfütterung?",
+    "assistant": "Ich bin mir nicht sicher, was du mit \"Eilfütterung\" meinst. Könntest du das bitte präzisieren oder anders formulieren? Meinst du vielleicht die Erde?"
+  },
+  {
+    "user": "Wie alt ist der Eiffelturm?",
+    "assistant": "Der Eiffelturm wurde 1889 fertiggestellt und eröffnet. Das bedeutet, er ist etwa 135 Jahre alt (Stand 2024)."
+  },
+  {
+    "user": "Nee.",
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": "Ich",
+    "assistant": "Ignoriert"
+  },
+  {
+    "user": "Wie alt ist der Eiffeltum? Wie alt ist der Eiffeltum?Anders.",
+    "assistant": "Der Eiffelturm wurde 1889 fertiggestellt und eröffnet. Das bedeutet, er ist etwa 135 Jahre alt (Stand 2024)."
+  }
+]

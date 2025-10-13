@@ -8,4 +8,4 @@ matplotlib
 pydub
 aiortc
 opencv-python-headless
-
+python-dotenv

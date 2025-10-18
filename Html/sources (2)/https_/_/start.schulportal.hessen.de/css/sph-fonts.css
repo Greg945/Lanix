@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'sph-moodle';
+  src:  url('../fonts/sph-moodle.eot?n95kez');
+  src:  url('../fonts/sph-moodle.eot?n95kez#iefix') format('embedded-opentype'),
+    url('../fonts/sph-moodle.ttf?n95kez') format('truetype'),
+    url('../fonts/sph-moodle.woff?n95kez') format('woff'),
+    url('../fonts/sph-moodle.svg?n95kez#sph-moodle') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.mathesicherkoennen, .onilo {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sph-moodle' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1.107;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="sph-"], [class*=" sph-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sph-moodle' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1.107;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.onilo:before {
+  content: "\e916";
+}
+
+.mathesicherkoennen:before {
+  content: "\e914";
+}
+
+.sph-idea-light:before {
+  content: "\e90c";
+}
+.sph-idea-regular:before {
+  content: "\e90d";
+}
+.sph-idea-solid:before {
+  content: "\e90e";
+}
+.sph-vidis:before {
+  content: "\e90f";
+}
+.sph-mahara:before {
+  content: "\e910";
+}
+.sph-vidis-2:before {
+  content: "\e911";
+}
+.sph-board-light:before {
+  content: "\e900";
+}
+.sph-board-regular:before {
+  content: "\e901";
+}
+.sph-board-solid:before {
+  content: "\e902";
+}
+.sph-group-monitor-text-light:before {
+  content: "\e903";
+}
+.sph-group-monitor-text-regular:before {
+  content: "\e904";
+}
+.sph-group-monitor-text-solid:before {
+  content: "\e905";
+}
+.sph-schulmoodle2-light:before {
+  content: "\e906";
+}
+.sph-schulmoodle2-regular:before {
+  content: "\e907";
+}
+.sph-schulmoodle2-solid:before {
+  content: "\e908";
+}
+.sph-schulmoodle-light:before {
+  content: "\e909";
+}
+.sph-schulmoodle-regular:before {
+  content: "\e90a";
+}
+.sph-schulmoodle-solid:before {
+  content: "\e90b";
+}
+
+
+
+.sph-idea.sph-light:before {
+  content: "\e90c";
+}
+.sph-idea.sph-regular:before {
+  content: "\e90d";
+}
+.sph-idea.sph-solid:before {
+  content: "\e90e";
+}
+.sph-idea:before {
+  content: "\e90e";
+}
+.sph-vidis:before {
+  content: "\e90f";
+}
+.sph-board.sph-light:before {
+  content: "\e900";
+}
+.sph-board.sph-regular:before {
+  content: "\e901";
+}
+.sph-board.sph-solid:before {
+  content: "\e902";
+}
+.sph-board:before {
+  content: "\e902";
+}
+.sph-group-monitor-text.sph-light:before {
+  content: "\e903";
+}
+.sph-group-monitor-text.sph-regular:before {
+  content: "\e904";
+}
+.sph-group-monitor-text.sph-solid:before {
+  content: "\e905";
+}
+.sph-group-monitor-text:before {
+  content: "\e905";
+}
+.sph-schulmoodle2.sph-light:before {
+  content: "\e906";
+}
+.sph-schulmoodle2.sph-regular:before {
+  content: "\e907";
+}
+.sph-schulmoodle2.sph-solid:before {
+  content: "\e908";
+}
+.sph-schulmoodle2:before {
+  content: "\e908";
+}
+.sph-schulmoodle.sph-light:before {
+  content: "\e909";
+}
+.sph-schulmoodle.sph-regular:before {
+  content: "\e90a";
+}
+.sph-schulmoodle.sph-solid:before {
+  content: "\e90b";
+}
+.sph-schulmoodle:before {
+  content: "\e90b";
+}

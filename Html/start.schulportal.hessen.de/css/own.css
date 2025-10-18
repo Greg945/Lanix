@@ -1,0 +1,320 @@
+@import url("/css/sph-fonts.css");
+
+.sticky.is-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+}
+
+/* Custom HTML tag `<encoded>` */
+encoded {
+    display: none;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+.text-default {
+    color: #333;
+}
+
+
+*.fa-file-word {
+    /*color: #1B5EBE;*/
+}
+
+*.fa-file-pdf {
+    /*color: red;*/
+}
+.btn.btn-primary > .fa-file-pdf {
+    color: white;
+}
+
+*.blue {
+    color: blue;
+}
+
+body {
+	background-color: #FFF;
+	overflow: scroll;
+}
+
+.panel-heading a {
+	color: #000;
+}
+
+.headlogo {
+	margin: 1px;
+	background-color: #FFF;
+	border-radius: 5px;
+	border: 3px solid #FFF;
+}
+
+
+
+/* Startseite - alphabetisches Men+ */
+#menuelist {
+	display: none;
+}
+
+#menuelist .menueitem {
+	border-radius: 2px;
+}
+#menuelist .menueitem a span:first-child {
+	color: #FFFFFF; border-radius: 2px; padding: 4px; font-size: 14pt;
+}
+#menuelist .menueitem .badge {
+	background-color: #D9534F;
+	color: #FFF !important;
+}
+
+@media (max-width: 768px) {
+	#menuelist .menueitem {
+		padding: 2px;
+	}
+}
+
+#menuelist #listmenue {
+	background-color: rgba(255,255,255,0.8);
+	padding: 5px;
+	border-radius: 2px;
+}
+
+/* Panels - Pfeile */
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+}
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e113";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    /*color: grey;*/         /* adjust as needed */
+}
+
+/* Schul-Hintergründe */
+.schoolbg {
+  opacity: 0.7;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+/** Navbar - Badge */
+.navbar ul.nav > li > a span.badge {
+	background-color: #FFF;
+	color: #264a7c;
+}
+
+.table-responsive>.fixed-column {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    border-right: 1px solid #ddd;
+}
+@media(min-width:768px) {
+    .table-responsive>.fixed-column {
+        display: none;
+    }
+}
+
+.table-nonfluid {
+   width: auto !important;
+}
+
+.table-centered td,
+.table-centered th{
+    text-align: center;
+}
+
+@media print { 
+    .printurl a[href]:after{content:" (" attr(href) ")"}
+    
+    td, th { padding:1mm; margin:0}
+    
+    .badge { border: 1px solid grey; color: #000000;}
+}
+
+.headlogo {
+    font-weight: 200;
+letter-spacing: -1px;
+    font-size: 2.6em;
+    line-height: 32px;
+    color: #606060;
+    font-family: "Open Sans", Arial, sans-serif;
+    direction: ltr;
+}
+
+.headlogo small {
+    font-size: 70%;
+    font-weight: 200;
+    letter-spacing: -1px;    
+}
+
+.headlogo .tiny {
+    line-height: 10px;
+    font-size: 35%;
+    font-weight: 200;
+    letter-spacing: 0;
+}
+
+
+
+input[type="time"] {
+    padding-top: 0;
+}
+
+.key-schul-id {
+    transform: rotate(135deg) scaleY(-1);
+}
+
+.modal {
+    z-index: 2000 !important;
+}
+
+
+.tooltip {
+    z-index: 2001;
+}
+
+.clockpicker-popover {
+    z-index: 2001;
+}
+
+.text-break-all {
+    word-break: break-all !important;
+    overflow-wrap: anywhere !important;
+}
+
+.text-decoration-none {
+    text-decoration: none !important;
+}
+
+a.disabled {
+    cursor: none !important;
+    opacity: 0.65 !important;
+    pointer-events: none !important;
+}
+
+label.label-normal,
+.label-normal {
+    font-weight: inherit;
+    font-size: inherit;
+    display: inline;
+    max-width: none;
+    margin-bottom: auto;
+}
+
+/* <editor-fold desc="Bootbox overrides"> */
+
+/* Same width as height for close button (at right top) */
+.bootbox.modal .modal-header .bootbox-close-button.close,
+.bootbox.modal .modal-body .bootbox-close-button.close {
+    width: 21px;
+}
+/* Bootbox without header */
+.bootbox.modal .modal-body .bootbox-close-button.close + .bootbox-body {
+    padding-top: 20px;
+}
+
+/* </editor-fold> */
+
+
+/* Button groups with actions (square representation) */
+.btn-group.btn-group-actions,
+.btn-group.btn-group-small-actions {
+    line-height: 34px;
+}
+td > .btn-group.btn-group-actions,
+td > .btn-group.btn-group-small-actions {
+    margin-top: -4px;
+    margin-bottom: -4px;
+}
+.btn-group.btn-group-actions .btn {
+    padding: 8px !important;
+    min-width: 35px;
+}
+.btn-group.btn-group-small-actions .btn {
+    padding: 4px !important;
+    min-width: 29px;
+}
+
+/* Panel group with accordion */
+.panel-group .panel-heading > .panel-title > a {
+    display: block;
+}
+
+/* FooterNotification */
+#footer-notification {
+    min-height: 60px;
+    position:fixed;
+    bottom: 10px;
+    right: 10px;
+}
+#footer-notification .alert-footer-notification {
+    display: none;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+#footer-notification .alert-footer-notification .fa.fa-spinner.fa-pulse {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+}
+
+/* Spacing */
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.pt-30 {
+    padding-top: 30px;
+}

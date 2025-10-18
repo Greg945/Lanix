@@ -1,9 +1,15 @@
 
 [theme]
-base="dark"
+base="light"
 primaryColor="#0a8f56"
 backgroundColor="#ffffff"
 secondaryBackgroundColor="#0f67e2"
+
+[theme.sidebar]
+primaryColor ="#ff0000ff"
+backgroundColor = "#005d09ff"
+secondaryBackgroundColor = "#02005dff"
+textColor ="#eeff00ff"
 
 [server]
 enableXsrfProtection = false

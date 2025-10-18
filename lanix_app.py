@@ -43,7 +43,7 @@ test = st.Page("seiten/test.py", title="Test")
 
 pg = st.navigation(
     ["seiten/stg.py", "seiten/settings.py", "seiten/photo.py", "seiten/test.py"],
-    position="top",
+    position="sidebar",
     expanded=False,
 )
 pg.run()

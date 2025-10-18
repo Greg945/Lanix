@@ -1,0 +1,74 @@
+/* Allgemeine Einstellungen */
+body {
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #606060;
+  box-sizing: border-box;
+}
+
+/* Navigation */
+.main-nav {
+  background-color: rgb(15, 103, 226);
+  border-top: 5px solid rgb(44, 36, 130);
+  min-height: 50px;
+  position: relative;
+}
+
+.nav-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.nav-logo {
+  position: relative;
+  left: -13px;
+  top: -16px;
+  display: block;
+  border: 0;
+}
+
+/* Hauptinhalt */
+.main-content {
+  background-color: #ffffff;
+}
+
+.content-wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.content-box {
+  font-weight: 200;
+  letter-spacing: -1px;
+  font-size: 36px;
+  line-height: 32px;
+  color: #606060;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 3px solid #fff;
+  margin: 1px;
+}
+
+.content-inner {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.content-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

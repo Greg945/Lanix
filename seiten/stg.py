@@ -89,6 +89,21 @@ if "context_open" not in st.session_state:
     st.session_state.context_open = False
     print("falssseeee")
 
+if "gemini_loop" not in st.session_state:
+    st.session_state.gemini_loop = None
+
+if "recv_q" not in st.session_state:
+    st.session_state.recv_q = queue.Queue()
+
+if "cmd_q" not in st.session_state:
+    st.session_state.cmd_q = queue.Queue()
+
+if "audio_q" not in st.session_state:
+    st.session_state.audio_q = queue.Queue()
+
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
 #####################################################################################
 # Definitionen #
 
@@ -450,13 +465,12 @@ if st.toggle("STT?"):
 
 chat_box = st.container(height=300)
 with chat_box:
-    for message in st.session_state.context:
-        st.chat_message("user").write(message["user"])
-        if "file" in message:
-            for image in message["file"]:
-                st.image(image)
-        if "assistant" in message:
-            st.chat_message("assistant").write(message["assistant"])
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
+            if "file" in message:
+                for image in message["file"]:
+                    st.image(image)
 
 if prompt := st.chat_input(
     "Say something",
@@ -474,13 +488,17 @@ if prompt := st.chat_input(
         st.chat_message("user").write(user_text)
 
         if not prompt.files:
-            st.session_state.cmd_q.put_nowait(f"Msg:{prompt}")
+            st.session_state.cmd_q.put_nowait(f"Msg:{user_text}")
+            st.session_state.messages.append({"role": "user", "content": user_text})
         else:
             print("File Uploads noch nicht möglich")
             st.warning("File Uploads noch nicht möglich")
             for file in prompt.files:
                 if file.type.startswith("image/"):
                     st.image(file)
+            st.session_state.messages.append(
+                {"role": "user", "content": user_text, "file": prompt.files}
+            )
 
 recive_fragment()
 

@@ -1,0 +1,26 @@
+#dropdownBtn-na {
+    overflow: hidden;
+    right: 5px;
+}
+#dropdownBtn-na .fa {
+    min-width: 8px;
+}
+
+.na-dropdown {
+    min-width: 5px;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.na-dropdown li {
+    margin: 2px 0;
+    padding: 0;
+}
+
+.na-dropdown li a {
+    min-width: 5px;
+    padding: 1px;
+}

@@ -1,0 +1,128 @@
+.chat *:before, *:after {
+  box-sizing: border-box;
+}
+.chat .chat-history {
+  padding: 10px 10px 20px;
+  border-bottom: 2px solid white;
+}
+.chat .chat-history .message-data {
+  margin-bottom: 12px;
+}
+.chat .chat-history .message-data-time {
+  color: #a8aab1;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.chat .chat-history .message {
+  color: white;
+  padding: 3px 3px;
+  line-height: 18px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 90%;
+  position: relative;
+  word-wrap: break-word;
+}
+.chat .chat-history .message:after {
+content: "";
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    border-width: 0 15px 15px;
+    border-style: solid;
+    border-color: #CCDBDC transparent;
+    display: block;
+    width: 0;
+}
+.msgInfo{
+  background-color: #d9edf7;  
+  padding: 18px 20px;
+  line-height: 26px;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  padding: 9px;
+  width: 90%;
+  position: relative;
+
+}
+.chat .chat-history .you-message {
+  background: #CCDBDC;
+  color:#003366;
+}
+.chat .chat-history .me-message {
+  background: #E9724C;
+}
+.chat .chat-history .me-message:after {
+  border-color: #E9724C transparent;
+    right: 20px;
+    top: -15px;
+    left: auto;
+    bottom:auto;
+}
+.chat .chat-message {
+  padding: 30px;
+}
+.chat .chat-message .fa-file-o, .chat .chat-message .fa-file-image-o {
+  font-size: 16px;
+  color: gray;
+  cursor: pointer;
+}
+
+.message-data-name {
+    font-weight: bold;
+}
+
+
+.chat-ul li{
+    list-style-type: none;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.you {
+  color: #CCDBDC;
+}
+
+.me {
+  color: #E9724C;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway",sans-serif;
+    color: #003366;
+}
+#content h1{
+    font-size: 20px;
+}
+#content h4{
+    font-size: 14px;
+}
+#content small{
+    font-size: 16px;
+}
+.chat .chat-history .message a{
+  
+  border-radius: 5px;
+  padding: 3px;
+  margin: 2px;
+}

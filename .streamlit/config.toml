@@ -2,7 +2,7 @@
 [theme]
 base="light"
 primaryColor="#0a8f56"
-backgroundColor="#ffffff"
+backgroundColor="#ffffffff"
 secondaryBackgroundColor="#0f67e2"
 
 [theme.sidebar]
@@ -14,3 +14,5 @@ textColor ="#eeff00ff"
 [server]
 enableXsrfProtection = false
 enableCORS = false
+
+

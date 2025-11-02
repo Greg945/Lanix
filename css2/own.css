@@ -1,4 +1,4 @@
-
+@import url("/css/sph-fonts.css");
 
 .sticky.is-sticky {
   position: fixed;
@@ -9,7 +9,10 @@
   width: 100%;
 }
 
-
+/* Custom HTML tag `<encoded>` */
+encoded {
+    display: none;
+}
 
 .red {
 	color: red;
@@ -24,11 +27,20 @@
 }
 
 
+*.fa-file-word {
+    /*color: #1B5EBE;*/
+}
 
+*.fa-file-pdf {
+    /*color: red;*/
+}
 .btn.btn-primary > .fa-file-pdf {
     color: white;
 }
 
+*.blue {
+    color: blue;
+}
 
 body {
 	background-color: #FFF;
@@ -48,7 +60,7 @@ body {
 
 
 
-
+/* Startseite - alphabetisches Men+ */
 #menuelist {
 	display: none;
 }
@@ -64,7 +76,11 @@ body {
 	color: #FFF !important;
 }
 
-
+@media (max-width: 768px) {
+	#menuelist .menueitem {
+		padding: 2px;
+	}
+}
 
 #menuelist #listmenue {
 	background-color: rgba(255,255,255,0.8);
@@ -72,19 +88,21 @@ body {
 	border-radius: 2px;
 }
 
-
+/* Panels - Pfeile */
 .panel-heading .accordion-toggle.collapsed:after {
-
-    content: "\e114";
+    /* symbol for "collapsed" panels */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
 }
 
 .panel-heading .accordion-toggle:after {
-
-    font-family: 'Glyphicons Halflings';  
-    content: "\e113"; 
-    float: right; 
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e113";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    /*color: grey;*/         /* adjust as needed */
 }
 
+/* Schul-Hintergründe */
 .schoolbg {
   opacity: 0.7;
   background-size: cover;
@@ -100,7 +118,7 @@ body {
   background-repeat: no-repeat;
 }
 
-
+/** Navbar - Badge */
 .navbar ul.nav > li > a span.badge {
 	background-color: #FFF;
 	color: #264a7c;
@@ -112,7 +130,11 @@ body {
     width: auto;
     border-right: 1px solid #ddd;
 }
-
+@media(min-width:768px) {
+    .table-responsive>.fixed-column {
+        display: none;
+    }
+}
 
 .table-nonfluid {
    width: auto !important;
@@ -123,7 +145,13 @@ body {
     text-align: center;
 }
 
-
+@media print { 
+    .printurl a[href]:after{content:" (" attr(href) ")"}
+    
+    td, th { padding:1mm; margin:0}
+    
+    .badge { border: 1px solid grey; color: #000000;}
+}
 
 .headlogo {
     font-weight: 200;
@@ -195,20 +223,22 @@ label.label-normal,
     margin-bottom: auto;
 }
 
+/* <editor-fold desc="Bootbox overrides"> */
 
-
+/* Same width as height for close button (at right top) */
 .bootbox.modal .modal-header .bootbox-close-button.close,
 .bootbox.modal .modal-body .bootbox-close-button.close {
     width: 21px;
 }
-
+/* Bootbox without header */
 .bootbox.modal .modal-body .bootbox-close-button.close + .bootbox-body {
     padding-top: 20px;
 }
 
+/* </editor-fold> */
 
 
-
+/* Button groups with actions (square representation) */
 .btn-group.btn-group-actions,
 .btn-group.btn-group-small-actions {
     line-height: 34px;
@@ -227,10 +257,12 @@ td > .btn-group.btn-group-small-actions {
     min-width: 29px;
 }
 
+/* Panel group with accordion */
 .panel-group .panel-heading > .panel-title > a {
     display: block;
 }
 
+/* FooterNotification */
 #footer-notification {
     min-height: 60px;
     position:fixed;
@@ -248,6 +280,7 @@ td > .btn-group.btn-group-small-actions {
     line-height: 16px;
 }
 
+/* Spacing */
 .mb-10 {
     margin-bottom: 10px;
 }
